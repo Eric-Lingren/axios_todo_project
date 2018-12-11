@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eric's CRUD Trello</title>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+</head>
+
+<body>
+    <h1>Eric's CRUD Trello</h1>
+
+    <form id='inputForm' name='listForm'>
+        <input name='title' id='inputTitle' placeholder='Title Here' >   
+        <input name='description' id='inputDescription'  placeholder='Description'>
+        <input name='price' type='number' id='inputPrice'  placeholder='$'>
+        <input name='image' id='imageURL'  placeholder='Image URL'> 
+        <input name='complete' type='checkbox' > Completed? <button id='addItem'>Add</button>
+    </form>
+
+    <div class='wrapper'>
+        <div class='listHolder' id='list-container'>
+            <h2> To Do:</h2>
+        </div>
+        <div class='listHolder' id='done-container'>
+            <h2>Done:</h2>
+        </div>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js'></script>
+    <script src=./app.js> </script>
+</body>
+</html>
